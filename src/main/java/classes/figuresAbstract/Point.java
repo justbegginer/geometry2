@@ -26,6 +26,13 @@ public abstract class Point {
         return y;
     }
 
+    protected boolean equals(Point point){
+        return point.x == this.x && point.y == this.y;
+    }
+
+    protected double length(){
+        return Math.sqrt(x*x+y*y);
+    }
     @Override
     public String toString() {
         return "Point = {" +

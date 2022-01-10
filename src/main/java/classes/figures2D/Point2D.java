@@ -6,10 +6,9 @@ import classes.figuresAbstract.Point;
 import java.util.ArrayList;
 
 public class Point2D extends Point {
-    public Point2D(int x, int y){
+    public Point2D(double x, double y){
         super(x, y);
     }
-
 
     public static boolean isPointsOnSameLine(ArrayList<Point2D> points){
         if (points.size() <= 1){
@@ -23,5 +22,13 @@ public class Point2D extends Point {
             }
         }
         return true;
+    }
+
+    public boolean equal(Point2D point2D){
+        return super.equals(point2D);
+    }
+
+    public double length(){
+        return super.length();
     }
 }
