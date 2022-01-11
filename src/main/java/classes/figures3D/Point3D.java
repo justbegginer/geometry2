@@ -3,7 +3,7 @@ package classes.figures3D;
 import classes.figuresAbstract.Point;
 
 public class Point3D extends Point {
-    double z;
+    private double z;
     public Point3D(double x, double y, double z){
         super(x, y);
         this.z = z;
