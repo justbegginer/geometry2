@@ -24,6 +24,8 @@ public class Vector2D extends Vector {
 
     public double length() { return super.length();}
 
+    public String relation(Vector2D anotherVector) { return super.relation(anotherVector); }
+
     @Override
     public String toString() {
         return "Vector2D{" +
