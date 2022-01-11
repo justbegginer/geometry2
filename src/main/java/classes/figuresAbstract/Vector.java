@@ -25,18 +25,10 @@ public abstract class Vector extends Point{
     }
 
     protected String relation(Vector anotherVector) {
-        Vector vector = null;
-        try{
-            vector = (Vector) anotherVector.clone();
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-            return "";
-        }
-        vector.inverse();
         if (this.equal(anotherVector)){
             return "co-directional";
         }
-        else if(this.equal(vector)){
+        else if(this.x == -anotherVector.x && this.y == -anotherVector.y){
             return "oppositely-directional";
         }
         else{

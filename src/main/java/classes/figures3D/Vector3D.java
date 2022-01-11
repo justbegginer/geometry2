@@ -28,9 +28,9 @@ public class Vector3D extends Vector{
         this.z -= another.z;
     }
 
-    public void inverse(Vector3D another){
+    public void inverse(){
         super.inverse();
-        this.z = -another.z;
+        this.z = -this.z;
     }
     public double dot(Vector3D another){
         return super.dot(another) + z*another.z;

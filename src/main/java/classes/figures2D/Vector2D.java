@@ -16,7 +16,7 @@ public class Vector2D extends Vector {
         super.minus(anotherVector);
     }
 
-    public void inverse(Vector2D anotherVector) { super.inverse();}
+    public void inverse() { super.inverse();}
 
     public double dot(Vector2D anotherVector) { return super.dot(anotherVector);}
 

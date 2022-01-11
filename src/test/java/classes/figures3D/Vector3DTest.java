@@ -33,4 +33,15 @@ class Vector3DTest {
         Vector3D vector3D = new Vector3D(5, 4, 2);
         assertEquals(vector3D.dot(vector3D), 45);
     }
+
+    @Test
+    void relation() {
+        Vector3D vector3D = new Vector3D(4, 4, 4);
+        Vector3D vector3D1 = new Vector3D(4, 4, 4);
+        assertEquals(vector3D.relation(vector3D1), "co-directional");
+        vector3D1.inverse();
+        assertEquals(vector3D.relation(vector3D1), "oppositely-directional");
+        vector3D.setZ(0);
+        assertEquals(vector3D.relation(vector3D1), "have no relation");
+    }
 }

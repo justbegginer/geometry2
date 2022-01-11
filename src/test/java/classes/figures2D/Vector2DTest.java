@@ -33,4 +33,15 @@ class Vector2DTest {
         Vector2D vector2D = new Vector2D(5, 4);
         assertEquals(vector2D.dot(vector2D), 41);
     }
+
+    @Test
+    void relation(){
+        Vector2D vector2D = new Vector2D(3, 4);
+        Vector2D vector2D1 = new Vector2D(3, 4);
+        assertEquals(vector2D.relation(vector2D1), "co-directional");
+        vector2D1.inverse();
+        assertEquals(vector2D.relation(vector2D1), "oppositely-directional");
+        vector2D1.setY(0);
+        assertEquals(vector2D.relation(vector2D1), "have no relation");
+    }
 }
