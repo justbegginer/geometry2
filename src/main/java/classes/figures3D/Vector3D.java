@@ -34,4 +34,12 @@ public class Vector3D extends Vector{
         return Math.sqrt(x*x + y*y + z*z);
     }
 
+    @Override
+    public String toString() {
+        return "Vector3D{" +
+                "z=" + z +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

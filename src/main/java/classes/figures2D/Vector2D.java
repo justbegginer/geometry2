@@ -23,4 +23,12 @@ public class Vector2D extends Vector {
     public boolean equal(Vector2D anotherVector) { return super.equal(anotherVector); }
 
     public double length() { return super.length();}
+
+    @Override
+    public String toString() {
+        return "Vector2D{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
